@@ -1,0 +1,23 @@
+.nav-header {
+  height: 50px;
+  border-bottom: 1px solid lightgrey;
+  padding: 0 30px;
+
+  .nav-header-title {
+    line-height: 50px;
+    font-size: 30px;
+  }
+  
+  .links {
+    float: right;
+  }
+
+  .link {
+    display: inline-block;
+    line-height: 50px;
+    font-size: 14px;
+    color: magenta;
+    margin-left: 30px;
+    font-family: sans-serif;
+  }
+}
