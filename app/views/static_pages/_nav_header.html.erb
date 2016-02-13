@@ -1,11 +1,16 @@
 <nav class="nav-header clearfix">
   <%= link_to "Gemma's First App", root_path, class: "nav-header-title" %>
   <ul class="links">
+    <li class="link"><%= link_to 'Home', root_path %></li> 
+    <li class="link"><%= link_to 'About', about_path %></li>
+    <li class="link"><%= link_to 'Contact Me', contact_me_path %></li>
     <% unless current_user %>
       <li class="link"><%= link_to 'Sign In', new_user_session_path %></li>
       <li class="link"><%= link_to 'Sign Up', new_user_registration_path %></li>
-    <% end %>
+    <%end %>
     <% if current_user %>
+      <li class="link"><%= link_to 'Random', random_path %></li> 
+      <li class="link"><%= link_to 'Create', create_path %></li>
       <li class="link"><%= link_to 'Logout', destroy_user_session_path, :method => :delete %></li>
     <% end %>
   </ul>
