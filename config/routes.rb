@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get "contact_me" => 'static_pages#contact_me'
   get "random" => 'static_pages#random'
   get "create" => 'static_pages#create'
+  
+  resources :profiles
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
