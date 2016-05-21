@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= render partial: "static_pages/nav_header" %>
+  <%= render partial: "static_pages/nav_header" unless current_page?(splash_path) %>
   <div class="container-base">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
