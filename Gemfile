@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'devise'
 
-gem 'sqlite3'        group: :development
+gem 'sqlite3',        group: :development
 
 
 # Use ActiveModel has_secure_password
