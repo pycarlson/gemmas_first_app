@@ -2,11 +2,13 @@ Rails.application.routes.draw do
   devise_for :users
   root 'static_pages#splash'
 
+  get "home" => 'static_pages#home'
   get "about" => 'static_pages#about'
   get "contact_me" => 'static_pages#contact_me'
   get "random" => 'static_pages#random'
   get "create" => 'static_pages#create'
   get "splash" => 'static_pages#splash'
+
   resources :profiles
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

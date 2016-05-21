@@ -1,6 +1,9 @@
 class StaticPagesController < ApplicationController
   http_basic_authenticate_with :name => "diamond-in-the-rough-blogs", :password => "2bornot2b"
 
+  def home
+  end
+
   def about
   end
  
